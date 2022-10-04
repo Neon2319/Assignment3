@@ -16,7 +16,8 @@ prompt.question("Enter max digit for the random number \n", function (digit){
     //If digit of RandomNum is below that of asked, adds the MinNum to be within range
     if(RandomNum < MinNum){
         RandomNum += MinNum;
-    } 
+    }
+    
     console.log(RandomNum);
     prompt.close();                             //close input stream
 })
