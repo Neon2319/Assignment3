@@ -13,7 +13,8 @@ prompt.question("Enter max digit for the random number \n", function (digit){
     MinNum = 10**(digit-1);                     //convert the input into min number count
     RandomNum = Math.floor(Math.random() * MaxNum);
 
-    //If digit of RandomNum is below that of asked, adds the MinNum to be within range
+    /*If digit of RandomNum is below that of asked, adds the MinNum to be within range
+    (For 3 digit case, if output were 8, 8 + 100[min of 3 digit] = 108. There we fixed the problem.)*/
     if(RandomNum < MinNum){
         RandomNum += MinNum;
     }
