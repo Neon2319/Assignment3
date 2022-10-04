@@ -19,6 +19,6 @@ prompt.question("Enter max digit for the random number \n", function (digit){
         RandomNum += MinNum;
     }
     
-    console.log(RandomNum);
+    console.log("Randomly generated number: ", RandomNum);
     prompt.close();                             //close input stream
 })
