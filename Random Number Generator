@@ -1,0 +1,12 @@
+let readline = require("readline");
+let prompt = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+prompt.question("Enter max digit for the random number \n", function (string){
+    var userInput = string;
+    numLimit = 10**userInput;
+    console.log(Math.floor(Math.random() * numLimit));
+    prompt.close();
+})
